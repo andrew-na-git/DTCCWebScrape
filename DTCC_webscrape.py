@@ -18,7 +18,7 @@ obj = 'Rates'
 
 path = r"C:\Users\yourname\chromedriver_win32\chromedriver.exe"
 website = 'https://pddata.dtcc.com/gtr/dashboard.do'
-download_path = r'C:\Users\yourname\'
+download_path = r'C:\Users\yourname\Data'
 download = download_path + '\\' + obj
 
 ## retrieve iframe src
