@@ -14,7 +14,7 @@ import glob
 import zipfile
 import numpy as np
 
-obj = 'Rates'
+obj = 'Rates' # target variable handles Rates, Credits, Equities
 
 path = r"C:\Users\yourname\chromedriver_win32\chromedriver.exe"
 website = 'https://pddata.dtcc.com/gtr/dashboard.do'
@@ -26,7 +26,6 @@ sess = requests.Session()
 req = sess.get(website)
 soup = BeautifulSoup(req.content, 'html.parser')
 src = soup.select_one('#cumulativeSliceFrame').attrs['src']
-print(src)
 
 ## retrieving data
 option = Options()
