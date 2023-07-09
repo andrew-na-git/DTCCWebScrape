@@ -19,6 +19,8 @@ obj = 'Rates' # target variable handles Rates, Credits, Equities
 path = r"C:\Users\yourname\chromedriver_win32\chromedriver.exe"
 website = 'https://pddata.dtcc.com/gtr/dashboard.do'
 download_path = r'C:\Users\yourname\Data'
+if not os.path.exists(download_path):
+    open(download_path, "w+").close()
 download = download_path + '\\' + obj
 
 ## retrieve iframe src
