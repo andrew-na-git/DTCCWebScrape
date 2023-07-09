@@ -16,9 +16,9 @@ import numpy as np
 
 obj = 'Rates'
 
-path = r".\chromedriver_win32\chromedriver.exe"
+path = r"C:\Users\yourname\chromedriver_win32\chromedriver.exe"
 website = 'https://pddata.dtcc.com/gtr/dashboard.do'
-download_path = r'.\Data'
+download_path = r'C:\Users\yourname\'
 download = download_path + '\\' + obj
 
 ## retrieve iframe src
